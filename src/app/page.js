@@ -17,6 +17,7 @@ export default function HomePage() {
       >
         {/* Post Owner Example*/}
         <PostOwner
+          key={650610777}
           name={"Natan bunkerd"}
           ID={"650610777"}
           posttext={"Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207"}
@@ -27,6 +28,7 @@ export default function HomePage() {
         {/* Comment Example */}
         {comments.map((person) => (
           <Comment
+            key={person.username}
             userImagePath={person.userImagePath}
             username={person.username}
             commentText={person.commentText}
